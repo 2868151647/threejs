@@ -55,14 +55,27 @@ export default {
       renderer.setClearColor(0xb9d3ff, 1); //设置背景颜色
       document.body.appendChild(renderer.domElement); //body元素中插入canvas对象
       //执行渲染操作   指定场景、相机作为参数
-      renderer.render(scene, camera);
+
+      // function render() {
+      //   renderer.render(scene, camera); //执行渲染操作
+      //   mesh.rotateX(0.01); //每次绕y轴旋转0.01弧度
+      //   requestAnimationFrame(render);
+      // }
+      // render();
+
+      function render() {
+        renderer.render(scene, camera); //执行渲染操作
+      }
+      render();
+      var controls = new THREE.OrbitControls(camera, renderer.domElement); //创建控件对象
+      controls.addEventListener("change", render); //监听鼠标、键盘事件
     }
     return {
-      box
-    }
+      box,
+    };
   },
   mounted() {
-    this.box()
+    this.box();
   },
 };
 </script>
