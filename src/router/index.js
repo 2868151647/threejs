@@ -5,6 +5,11 @@ const routes = [
     path: '/',
     component: () => import('../views/index.vue'),
     name: 'index'
+  },
+  {
+    path: '/geometryapi',
+    component: () => import('../views/geometryapi.vue'),
+    name: 'geometryapi'
   }
 ]
 
