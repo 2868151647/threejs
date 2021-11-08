@@ -27,6 +27,10 @@ export default {
                     name:'shadow',
                     url:'/shadow'
                 },
+                {
+                    name:'coordinate',
+                    url:'/coordinate'
+                }
             ]
         }
     },

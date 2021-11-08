@@ -25,7 +25,13 @@ const routes = [
         path: "/shadow",
         component: () => import("../views/shadow.vue"),
         name: 'shadow'
+      },
+      {
+        path: "/coordinate",
+        component: () => import("../views/coordinate.vue"),
+        name: 'coordinate'
       }
+      // coordinate
     ],
   },
 ];
