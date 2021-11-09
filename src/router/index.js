@@ -30,6 +30,11 @@ const routes = [
         path: "/coordinate",
         component: () => import("../views/coordinate.vue"),
         name: 'coordinate'
+      },
+      {
+        path: "/scene7",
+        component: () => import("../views/scene7.vue"),
+        name: 'scene7'
       }
       // coordinate
     ],

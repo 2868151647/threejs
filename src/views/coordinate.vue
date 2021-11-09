@@ -33,9 +33,6 @@ export default {
 
       scene.add(group)
 
-
-
-
       // 辅助坐标系
       var axisHelper = new THREE.AxesHelper(150);
       scene.add(axisHelper);
