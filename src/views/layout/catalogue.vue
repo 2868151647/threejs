@@ -71,13 +71,32 @@ export default {
           name: 'shadow',
           path: '/shadow',
           component: () => import('../three/shadow.vue')
+        },
+        {
+          name: 'TubeGeometry',
+          path: '/tubeGeometry',
+          component: () => import('../three/tubeGeometry.vue')
+        },
+        {
+          name: 'LatheGeometry',
+          path: '/latheGeometry',
+          component: () => import('../three/latheGeometry.vue')
+        },
+        {
+          name: 'ShapeGeometry',
+          path: '/shapeGeometry',
+          component: () => import('../three/shapeGeometry.vue')
+        },
+        {
+          name: 'ExtrudeGeometry',
+          path: '/extrudeGeometry',
+          component: () => import('../three/extrudeGeometry.vue')
         }
       ],
       array: []
     }
   },
   mounted() {
-     
     console.log('meta>>', this.$route.meta)
     if (this.$route.meta.name === 'three') {
       this.array = this.catalogueArrT
